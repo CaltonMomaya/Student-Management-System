@@ -4,6 +4,7 @@ import os
 FILE_NAME= "students.json"
 
 def load_students():
+    #Reads students from the JSON file and returns a list
     if not os.path.exists(FILE_NAME):
         return []
     
@@ -16,6 +17,7 @@ def load_students():
     
 
 def save_students(students_list):
+    #Writes the student list into the JSON file
     try:
         if not isinstance(students_list, list):
              return False
