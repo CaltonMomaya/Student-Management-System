@@ -16,7 +16,6 @@ def main():
 
         choice = input("Choose: ")
 
-        # ---------------- ADD STUDENT ----------------
         if choice == "1":
             student_id = input("Enter ID: ")
             name = input("Enter Name: ")
@@ -35,7 +34,7 @@ def main():
 
             print("Student added successfully.")
 
-        # ---------------- UPDATE STUDENT ----------------
+        
         elif choice == "2":
             student_id = input("Enter ID to update: ")
 
@@ -57,7 +56,7 @@ def main():
             else:
                 print("Student not found.")
 
-        # ---------------- DELETE STUDENT ----------------
+
         elif choice == "3":
             student_id = input("Enter ID to delete: ")
 
@@ -69,7 +68,7 @@ def main():
             else:
                 print("Student not found.")
 
-        # ---------------- VIEW STUDENTS ----------------
+
         elif choice == "4":
             if not students:
                 print("No students found.")
@@ -77,13 +76,13 @@ def main():
                 for student in students:
                     print(student)
 
-        # ---------------- EXIT ----------------
+
         elif choice == "5":
             save_students(students)
             print("Goodbye!")
             break
 
-        # ---------------- INVALID OPTION ----------------
+
         else:
             print("Invalid choice. Please try again.")
 
